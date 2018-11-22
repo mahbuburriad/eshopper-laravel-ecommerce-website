@@ -1,4 +1,7 @@
 @extends('layout')
+                  @section('title')
+                  {{ 'The Best Ecommerce Website in Bangladesh' }}
+                  @endsection
                    
                    @section('content')
                     <h2 class="title text-center">Features Items</h2>
