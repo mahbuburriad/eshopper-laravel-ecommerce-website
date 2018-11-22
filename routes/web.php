@@ -18,4 +18,5 @@ Route::get('/', 'HomeController@index' );
 
 //backend site
 
+Route::get('/admin_login', 'AdminController@login' );
 Route::get('/admin', 'AdminController@index' );
