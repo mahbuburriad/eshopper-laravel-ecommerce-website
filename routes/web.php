@@ -20,3 +20,4 @@ Route::get('/', 'HomeController@index' );
 
 Route::get('/admin_login', 'AdminController@login' );
 Route::get('/admin', 'AdminController@index' );
+Route::post('/admin-dashboard', 'AdminController@dashboard' );

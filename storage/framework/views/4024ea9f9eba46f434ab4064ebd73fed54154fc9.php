@@ -1,7 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
-
-<!-- Mirrored from bootstrapmaster.com/live/metro/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 08 Jan 2018 16:56:12 GMT -->
+<html lang="<?php echo e(str_replace('_', '-', app()->getLocale())); ?>">
 <head>
 	
 	<!-- start: Meta -->

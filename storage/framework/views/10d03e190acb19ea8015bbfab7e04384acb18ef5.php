@@ -57,7 +57,12 @@
 						<a href="#"><i class="halflings-icon cog"></i></a>
 					</div>
 					<h2>Login to your account</h2>
-					<form class="form-horizontal" action="" method="post">
+					<form class="form-horizontal" action="<?php echo e(url('/admin-dashboard')); ?>" method="post">
+					
+					<?php echo e(csrf_field()); ?>
+
+					
+					
 						<fieldset>
 							
 							<div class="input-prepend" title="Username">
