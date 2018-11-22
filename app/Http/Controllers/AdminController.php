@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use DB;
-
+    
 class AdminController extends Controller
 {
     public function login(){
@@ -20,10 +20,9 @@ class AdminController extends Controller
         $admin_password = $request->admin_password;
         $result = DB::table('tbl_admin')
             ->where('admin_email', $admin_email)
-            ->where('admin_password', $admin_password)
-            ->first();
-        echo "<pre>";
-        print_r($result);
-        exit();
+            ->where('admin_password', $admin_password);
+            echo "<pre>";
+            print_r($result);
+            exit();
     }
 }
